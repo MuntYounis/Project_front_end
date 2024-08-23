@@ -1,0 +1,282 @@
+:root{
+    --mainColor:rgb(71, 0, 5);
+    --secondaryColor:rgb(244, 241, 195);
+}
+
+
+.row-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+nav{
+    background-color: var(--secondaryColor);
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    transition: .6s background-color;
+    z-index: 1000;
+}
+
+.scrolNavbar{
+    background-color: var(--mainColor) !important;
+    a {
+        color: var(--secondaryColor);
+    }
+
+}
+
+nav a{
+    color: black;
+    text-decoration: none; 
+    font-weight: 500;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    flex: 1;
+    text-align: center;
+}
+
+header{
+    background-image: url('../images/background-header.png');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    
+}
+.main-info{
+    height: 100vh;
+}
+.main-info h2{
+    font-size: 90px;
+    color:var(--mainColor) ;
+    margin-bottom: 10%;
+}
+.main-info p{
+    margin-bottom: 5%;
+}
+button{
+    border-radius: 14px;
+    min-width: 10px;
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 0px;
+    background-color:var(--mainColor) ;
+}
+button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+main{
+    margin-top: 20px;
+}
+.main-info button:last-child{
+    
+    background-color: #ffffff;
+    
+}
+.main-info button:last-child a{
+    color: var(--mainColor);
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: 30px;
+}
+
+
+.services{
+    margin-top: 40px;
+}
+@media (min-width: 1400px) {
+    .container-xxl {
+        max-width: 1700px;
+    }
+}
+
+.card{
+    padding: 60px 30px;
+    background-color: var(--secondaryColor);
+    position: relative;
+    transition: background-color 0.5s ease;
+}
+
+.card:hover{
+    background-color: var(--mainColor);
+    color: #ffffff;
+    
+}
+
+
+.card:nth-child(2){
+    background-color: var(--mainColor);
+    color: #ffffff;
+}
+
+.about-us{
+    margin-top: 30px;
+    padding: 0px 100px;
+}
+
+#thankYouMessage {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+    border: 2px solid green;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+
+}
+
+.check-icon {
+    font-size: 24px;
+    color: green;
+    margin-right: 8px;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: var(--mainColor); 
+    color: #fff; 
+    padding: 20px 0; 
+    margin-top:200px;
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-around; 
+    max-width: 1600px; 
+    margin: 0 auto; 
+}
+
+.footer-section {
+    flex: 1; 
+    margin: 0 15px; 
+}
+
+.footer-section h3 {
+    margin-bottom: 15px; 
+    font-size: 18px; 
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0; 
+    padding: 0; 
+}
+
+.footer-section ul {
+    list-style: none; 
+}
+
+.footer-section ul li {
+    margin-bottom: 10px; 
+}
+
+.footer-section ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+
+.footer-section ul li a:hover {
+    color: #ccc; 
+}
+
+.newsletter-form input[type="email"],
+.newsletter-form input[type="tel"] {
+    width: 100%; 
+    padding: 8px; 
+    margin-bottom: 10px; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 16px; 
+}
+
+.newsletter-form button {
+    width: 100%; 
+    padding: 10px; 
+    background-color: var(--secondaryColor); 
+    color: var(--mainColor); 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    font-weight: 500;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+    border: var(--secondaryColor) 2px solid;
+
+}
+.main-about{
+    padding-bottom: 40px;
+}
+.main-about button:last-child{
+    background-color: var(--secondaryColor);
+    
+}
+
+.main-about button:last-child a{
+    color: black;
+}
+
+/* about */
+
+
+.c-item{
+    height: 500px;
+
+
+}
+
+.c-img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    
+}
+
+.carousel-caption h5,.carousel-caption p{
+    
+    text-shadow: 2px 2px 5px black;
+    
+}
+
+.testimonials{
+    color: var(--secondaryColor);
+    padding: 20px;
+    background-color: var(--mainColor);
+}

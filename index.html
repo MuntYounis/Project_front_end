@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body >
+    <nav class="row-main">
+        <img src="images/logo.png" alt="logo">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header class="container-fluid">
+
+        <div class="main-info row-main">
+            <div class="info">
+                <h2>We provide Professional Consulting</h2>
+                <p>It's a long established fact that a reader will be distracted by readable content of a page</p>
+                <button><a href="services.html">Read More</a></button>
+            </div>
+            <div class="display">
+                <img src="images/service-1.png" alt="Consulting Services">
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="we-do container-xxl">
+            <h2>What we do</h2>
+            <div class="services d-flex ">
+                <div class="card m-3">
+                    <img src="images/services-1a.png" alt="services 1" class="hover-img">
+                    <h3>Consulting</h3>
+                    <p>We provide Consuling services for your business for a reasonable fee. Our consulting services are the best in the country and we can give a 1 month demo</p>
+                </div>
+                <div class="card m-3">
+                    <img src="images/services-2.png" alt="services 2">
+                    <h3>Budgeting</h3>
+                    <p>We provide budgeting services for your business for a reasonable fee. Our budgeting services are the best in the country and we can give a 1 month demo</p>
+                </div>
+                <div class="card m-3">
+                    <img src="images/services-3a.png" alt="services 3" class="hover-img">
+                    <h3>Taxes</h3>
+                    <p>We provide taxing services for your business for a reasonable fee. Our taxing services are the best in the country and we can give a 1 month demo</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-us container-xxl d-flex">
+            <img src="images/about-us.png" alt="about us" class="m-3">
+            <div class="about-desc m-3">
+                <h2>About Us</h2>
+                <p>We work on providing different financial services. Our goal is to help our clients to achieve the maximum profits and their best financial goals</p>
+                <button><a href="about.html">Read More</a></button>
+            </div>
+        </div>
+        <div class="call-back">
+            <div class="container mt-5 form-container">
+                <h2>Request a Callback</h2>
+                <p>Fill the form below to request a callback from one of our agents</p>
+                <form id="callForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" required rows="4" cols="50"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+                <div id="thankYouMessage">
+                    <span class="check-icon">✔</span> Thanks for sharing your info with us, an agent will contact you soon.
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p>123 Finance Street,<br>New York, NY 10001</p>
+            </div>
+
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+                <h3>Newsletter Subscribe</h3>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <input type="tel" placeholder="Enter your phone number" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div id="subscribeAlert" class="alert alert-success mt-3" role="alert" style="display: none;">
+                    You have been subscribed successfully to our newsletter!
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+    
+</html>
