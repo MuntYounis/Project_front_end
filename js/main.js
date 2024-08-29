@@ -1,3 +1,7 @@
+document.querySelector('.burger-menu').addEventListener('click', function() {
+    document.querySelector('.nav-list').classList.toggle('active');
+});
+
 document.querySelectorAll('.hover-img').forEach(function(img) {
     img.addEventListener('mouseover', function() {
         const originalSrc = img.src;

@@ -1,3 +1,7 @@
+document.querySelector('.burger-menu').addEventListener('click', function() {
+    document.querySelector('.nav-list').classList.toggle('active');
+});
+
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('nav');
     const navHeight = navbar.offsetHeight;

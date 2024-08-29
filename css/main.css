@@ -3,13 +3,19 @@
     --secondaryColor:rgb(244, 241, 195);
 }
 
+html, body {
+    overflow-x: hidden;
+}
 
 .row-main{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+* {
+    box-sizing: border-box;
 
+}
 ul {
     list-style-type: none;
 }
@@ -47,7 +53,82 @@ nav a{
 .nav-list li {
     flex: 1;
     text-align: center;
+    
 }
+/* 630px menu section */
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+    font-size: 1.5rem; 
+    color: var(--mainColor); 
+}
+
+
+@media (max-width: 630px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        background-color: var(--secondaryColor);
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .nav-list a {
+        color: var(--mainColor);
+        text-decoration: none;
+        padding: 10px; 
+        width: 100%; 
+        display: block; 
+    }
+
+    .nav-list li {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+        z-index: 1002;
+    }
+    .nav-list li a{
+        z-index: 1005;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+}
+@media (max-width: 700px){
+    .we-do p {
+        display: none;
+    }
+}
+@media (max-width: 860px){
+    .about-us img{
+        display: none;
+    }
+}
+.scrolNavbar .burger-menu {
+    color: var(--secondaryColor); 
+}
+
+@media (max-width: 950px) {
+    .display {
+        display: none;
+    }
+}
+/* 630px menu */
+
 
 header{
     background-image: url('../images/background-header.png');
@@ -67,6 +148,7 @@ header{
 .main-info p{
     margin-bottom: 5%;
 }
+
 button{
     border-radius: 14px;
     min-width: 10px;

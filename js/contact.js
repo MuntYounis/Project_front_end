@@ -1,3 +1,7 @@
+document.querySelector('.burger-menu').addEventListener('click', function() {
+    document.querySelector('.nav-list').classList.toggle('active');
+});
+
 document.getElementById('callForm').addEventListener('submit', function(event) {
     event.preventDefault();
     document.getElementById('callForm').style.display = 'none';
